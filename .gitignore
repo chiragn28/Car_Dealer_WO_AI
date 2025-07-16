@@ -1,0 +1,3 @@
+# .gitignore
+models/base.en.bin
+models/base.bin

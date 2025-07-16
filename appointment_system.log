@@ -1,0 +1,536 @@
+2025-06-30 03:35:15,164 - huggingface_hub.file_download - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-06-30 03:38:10,718 - faster_whisper - INFO - Processing audio with duration 01:20.640
+2025-06-30 03:38:11,657 - faster_whisper - INFO - Detected language 'en' with probability 0.76
+2025-06-30 03:38:18,280 - utils - INFO - Transcription complete.
+2025-06-30 03:38:18,280 - utils - INFO - Extracted plate: yak 2009 at
+2025-06-30 03:38:18,280 - utils - INFO - Extracted model: BMW X4 and my plate number is Abu Dhabi 12
+2025-06-30 03:38:18,280 - utils - INFO - Extracted time: 3 pm
+2025-06-30 03:38:18,295 - utils - ERROR - Error saving to Excel: Excel file format cannot be determined, you must specify an engine manually.
+2025-06-30 03:43:11,371 - faster_whisper - INFO - Processing audio with duration 01:20.640
+2025-06-30 03:43:12,331 - faster_whisper - INFO - Detected language 'en' with probability 0.76
+2025-06-30 03:43:19,009 - utils - INFO - Transcription complete.
+2025-06-30 03:43:19,009 - utils - INFO - Extracted plate: yak 2009 at
+2025-06-30 03:43:19,009 - utils - INFO - Extracted model: BMW X4 and my plate number is Abu Dhabi 12
+2025-06-30 03:43:19,009 - utils - INFO - Extracted time: 3 pm
+2025-06-30 03:43:19,397 - utils - ERROR - Error saving to Excel: File is not a zip file
+2025-06-30 03:44:19,447 - faster_whisper - INFO - Processing audio with duration 01:20.640
+2025-06-30 03:44:20,354 - faster_whisper - INFO - Detected language 'en' with probability 0.76
+2025-06-30 03:44:26,695 - utils - INFO - Transcription complete.
+2025-06-30 03:44:26,695 - utils - INFO - Extracted plate: yak 2009 at
+2025-06-30 03:44:26,695 - utils - INFO - Extracted model: BMW X4 and my plate number is Abu Dhabi 12
+2025-06-30 03:44:26,695 - utils - INFO - Extracted time: 3 pm
+2025-06-30 03:44:26,769 - utils - INFO - Appointment saved to ./appointments.xlsx
+2025-06-30 03:57:23,279 - utils - INFO - Transcribing audio: ./audio_files\WhatsApp.mp4
+2025-06-30 03:57:23,493 - faster_whisper - INFO - Processing audio with duration 01:20.640
+2025-06-30 03:57:24,461 - faster_whisper - INFO - Detected language 'en' with probability 0.76
+2025-06-30 03:57:31,103 - utils - INFO - Transcription complete.
+2025-06-30 03:57:31,103 - utils - ERROR - Error extracting data from LLM: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-06-30 03:58:20,487 - utils - INFO - Transcribing audio: ./audio_files\WhatsApp.mp4
+2025-06-30 03:58:20,696 - faster_whisper - INFO - Processing audio with duration 01:20.640
+2025-06-30 03:58:21,619 - faster_whisper - INFO - Detected language 'en' with probability 0.76
+2025-06-30 03:58:28,164 - utils - INFO - Transcription complete.
+2025-06-30 03:58:31,018 - utils - INFO - LLM Response: ```json
+{
+  "name": "Bidpen Nayak",
+  "email": "BidpenNayak2009@gmail.com",
+  "phone": "0504687426",
+  "plate": "Abu Dhabi 12, 37525",
+  "model": "BMW X4",
+  "date": "28 June 2025",
+  "time": "3 pm"
+}
+```
+2025-06-30 03:58:31,018 - utils - ERROR - Error extracting data from LLM: Expecting value: line 1 column 1 (char 0)
+2025-06-30 04:04:36,166 - utils - INFO - Transcribing audio: ./audio_files\WhatsApp.mp4
+2025-06-30 04:04:36,384 - faster_whisper - INFO - Processing audio with duration 01:20.640
+2025-06-30 04:04:37,353 - faster_whisper - INFO - Detected language 'en' with probability 0.76
+2025-06-30 04:04:43,954 - utils - INFO - Transcription complete.
+2025-06-30 04:04:45,677 - utils - INFO - LLM Response: ```json
+{
+  "name": "Bidpen Nayak",
+  "email": "BidpenNayak2009@gmail.com",
+  "phone": "0504687426",
+  "plate": "Abu Dhabi 12, 37525",
+  "model": "BMW X4",
+  "date": "28 June 2025",
+  "time": "3 pm"
+}
+```
+2025-06-30 04:05:49,172 - utils - INFO - Transcribing audio: ./audio_files\WhatsApp.mp4
+2025-06-30 04:05:49,401 - faster_whisper - INFO - Processing audio with duration 01:20.640
+2025-06-30 04:05:50,325 - faster_whisper - INFO - Detected language 'en' with probability 0.76
+2025-06-30 04:05:57,087 - utils - INFO - Transcription complete.
+2025-06-30 04:05:59,780 - utils - INFO - LLM Response: ```json
+{
+  "name": "Bidpen Nayak",
+  "email": "BidpenNayak2009@gmail.com",
+  "phone": "0504687426",
+  "plate": "Abu Dhabi 12, 37525",
+  "model": "BMW X4",
+  "date": "28 June 2025",
+  "time": "3 pm"
+}
+```
+2025-06-30 04:05:59,781 - utils - ERROR - Error saving to Excel: [Errno 2] No such file or directory: './appointments.xlsx'
+2025-06-30 04:07:37,397 - utils - INFO - Excel file not found. Creating new one at ./appointments.xlsx
+2025-06-30 04:07:41,390 - utils - INFO - Transcribing audio: ./audio_files\WhatsApp.mp4
+2025-06-30 04:07:41,606 - faster_whisper - INFO - Processing audio with duration 01:20.640
+2025-06-30 04:07:42,559 - faster_whisper - INFO - Detected language 'en' with probability 0.76
+2025-06-30 04:07:49,065 - utils - INFO - Transcription complete.
+2025-06-30 04:07:50,266 - utils - INFO - LLM Response: ```json
+{
+  "name": "Bidpen Nayak",
+  "email": "BidpenNayak2009@gmail.com",
+  "phone": "0504687426",
+  "plate": "Abu Dhabi 12, 37525",
+  "model": "BMW X4",
+  "date": "28 June 2025",
+  "time": "3 pm"
+}
+```
+2025-06-30 04:11:35,969 - utils - INFO - Transcribing audio: ./audio_files\WhatsApp.mp4
+2025-06-30 04:11:36,222 - faster_whisper - INFO - Processing audio with duration 01:20.640
+2025-06-30 04:11:37,186 - faster_whisper - INFO - Detected language 'en' with probability 0.76
+2025-06-30 04:11:43,912 - utils - INFO - Transcription complete.
+2025-06-30 04:11:46,097 - utils - INFO - LLM Response: ```json
+{
+  "name": "Bidpen Nayak",
+  "email": "BidpenNayak2009@gmail.com",
+  "phone": "0504687426",
+  "plate": "Abu Dhabi 12, 37525",
+  "model": "BMW X4",
+  "date": "28 June 2025",
+  "time": "3 pm"
+}
+```
+2025-06-30 04:14:47,780 - utils - INFO - Transcribing audio: ./audio_files\WhatsApp.mp4
+2025-06-30 04:14:48,011 - faster_whisper - INFO - Processing audio with duration 01:20.640
+2025-06-30 04:14:48,905 - faster_whisper - INFO - Detected language 'en' with probability 0.76
+2025-06-30 04:14:55,354 - utils - INFO - Transcription complete.
+2025-06-30 04:14:57,124 - utils - INFO - LLM Response: ```json
+{
+  "name": "Bidpen Nayak",
+  "email": "BidpenNayak2009@gmail.com",
+  "phone": "0504687426",
+  "plate": "Abu Dhabi 12, 37525",
+  "model": "BMW X4",
+  "date": "28 June 2025",
+  "time": "3 pm"
+}
+```
+2025-06-30 04:17:06,845 - utils - INFO - Transcribing audio: ./audio_files\WhatsApp.mp4
+2025-06-30 04:17:07,048 - faster_whisper - INFO - Processing audio with duration 01:20.640
+2025-06-30 04:17:07,959 - faster_whisper - INFO - Detected language 'en' with probability 0.76
+2025-06-30 04:17:14,709 - utils - INFO - Transcription complete.
+2025-06-30 04:17:15,861 - utils - INFO - LLM Response: ```json
+{
+  "name": "Bidpen Nayak",
+  "email": "BidpenNayak2009@gmail.com",
+  "phone": "0504687426",
+  "plate": "Abu Dhabi 12, 37525",
+  "model": "BMW X4",
+  "date": "28 June 2025",
+  "time": "3 pm"
+}
+```
+2025-06-30 04:21:16,735 - utils - INFO - Transcribing audio: ./audio_files\WhatsApp.mp4
+2025-06-30 04:21:16,939 - faster_whisper - INFO - Processing audio with duration 01:20.640
+2025-06-30 04:21:17,849 - faster_whisper - INFO - Detected language 'en' with probability 0.76
+2025-06-30 04:21:24,328 - utils - INFO - Transcription complete.
+2025-06-30 04:21:26,218 - utils - INFO - LLM Response: ```json
+{
+  "name": "Bidpen Nayak",
+  "email": "BidpenNayak2009@gmail.com",
+  "phone": "0504687426",
+  "plate": "Abu Dhabi 12, 37525",
+  "model": "BMW X4",
+  "date": "28 June 2025",
+  "time": "3 pm"
+}
+```
+2025-06-30 04:24:04,382 - utils - INFO - Transcribing audio: ./audio_files\WhatsApp.mp4
+2025-06-30 04:24:04,629 - faster_whisper - INFO - Processing audio with duration 01:20.640
+2025-06-30 04:24:05,564 - faster_whisper - INFO - Detected language 'en' with probability 0.76
+2025-06-30 04:24:12,097 - utils - INFO - Transcription complete.
+2025-06-30 04:24:15,154 - utils - INFO - LLM Response: ```json
+{
+  "name": "Bidpen Nayak",
+  "email": "BidpenNayak2009@gmail.com",
+  "phone": "0504687426",
+  "plate": "Abu Dhabi 12, 37525",
+  "model": "BMW X4",
+  "date": "28 June 2025",
+  "time": "3 pm"
+}
+```
+2025-06-30 04:33:00,972 - utils - INFO - Transcribing audio: ./audio_files\WhatsApp.mp4
+2025-06-30 04:33:01,191 - faster_whisper - INFO - Processing audio with duration 01:20.640
+2025-06-30 04:33:02,113 - faster_whisper - INFO - Detected language 'en' with probability 0.76
+2025-06-30 04:33:08,503 - utils - INFO - Transcription complete.
+2025-06-30 04:33:10,836 - utils - INFO - LLM Response: ```json
+{
+  "name": "Bidpen Nayak",
+  "email": "BidpenNayak2009@gmail.com",
+  "phone": "0504687426",
+  "plate": "Abu Dhabi 12, 37525",
+  "model": "BMW X4",
+  "date": "28 June 2025",
+  "time": "3 pm"
+}
+```
+2025-06-30 04:36:45,009 - utils - INFO - Transcribing audio: ./audio_files\WhatsApp.mp4
+2025-06-30 04:36:45,243 - faster_whisper - INFO - Processing audio with duration 01:20.640
+2025-06-30 04:36:46,173 - faster_whisper - INFO - Detected language 'en' with probability 0.76
+2025-06-30 04:36:52,709 - utils - INFO - Transcription complete.
+2025-06-30 04:36:54,094 - utils - INFO - LLM Response: ```json
+{
+  "name": "Bidpen Nayak",
+  "email": "BidpenNayak2009@gmail.com",
+  "phone": "0504687426",
+  "plate": "Abu Dhabi 12, 37525",
+  "model": "BMW X4",
+  "date": "28 June 2025",
+  "time": "3 pm"
+}
+```
+2025-06-30 04:38:20,231 - utils - INFO - Transcribing audio: ./audio_files\WhatsApp.mp4
+2025-06-30 04:38:20,444 - faster_whisper - INFO - Processing audio with duration 01:20.640
+2025-06-30 04:38:21,388 - faster_whisper - INFO - Detected language 'en' with probability 0.76
+2025-06-30 04:38:27,860 - utils - INFO - Transcription complete.
+2025-06-30 04:38:29,722 - utils - INFO - LLM Response: ```json
+{
+  "name": "Bidpen Nayak",
+  "email": "BidpenNayak2009@gmail.com",
+  "phone": "0504687426",
+  "plate": "Abu Dhabi 12, 37525",
+  "model": "BMW X4",
+  "date": "28 June 2025",
+  "time": "3 pm"
+}
+```
+2025-07-01 00:40:14,318 - utils - INFO - Transcribing audio: ./audio_files\WhatsApp.mp4
+2025-07-01 00:40:14,544 - faster_whisper - INFO - Processing audio with duration 01:20.640
+2025-07-01 00:40:15,542 - faster_whisper - INFO - Detected language 'en' with probability 0.76
+2025-07-01 00:40:22,277 - utils - INFO - Transcription complete.
+2025-07-01 00:40:24,450 - utils - INFO - LLM Response: ```json
+{
+  "name": "Bidpen Nayak",
+  "email": "BidpenNayak2009@gmail.com",
+  "phone": "0504687426",
+  "plate": "Abu Dhabi 12, 37525",
+  "model": "BMW X4",
+  "date": "28 June 2025",
+  "time": "3 pm"
+}
+```
+2025-07-01 00:40:24,786 - utils - ERROR - Error saving to Excel: File is not a zip file
+2025-07-01 00:41:41,986 - utils - INFO - Excel file not found. Creating new one at ./appointments.xlsx
+2025-07-01 00:41:55,325 - utils - INFO - Transcribing audio: ./audio_files\WhatsApp.mp4
+2025-07-01 00:41:55,559 - faster_whisper - INFO - Processing audio with duration 01:20.640
+2025-07-01 00:41:56,572 - faster_whisper - INFO - Detected language 'en' with probability 0.76
+2025-07-01 00:42:03,405 - utils - INFO - Transcription complete.
+2025-07-01 00:42:05,539 - utils - INFO - LLM Response: ```json
+{
+  "name": "Bidpen Nayak",
+  "email": "BidpenNayak2009@gmail.com",
+  "phone": "0504687426",
+  "plate": "Abu Dhabi 12, 37525",
+  "model": "BMW X4",
+  "date": "28 June 2025",
+  "time": "3 pm"
+}
+```
+2025-07-03 01:13:31,320 - utils - INFO - Transcribing audio: ./audio_files\WhatsApp.mp4
+2025-07-03 01:13:31,559 - faster_whisper - INFO - Processing audio with duration 01:20.640
+2025-07-03 01:13:32,640 - faster_whisper - INFO - Detected language 'en' with probability 0.76
+2025-07-03 01:13:39,710 - utils - INFO - Transcription complete.
+2025-07-03 01:13:42,284 - utils - INFO - LLM Response: ```json
+{
+  "name": "Bidpen Nayak",
+  "email": "BidpenNayak2009@gmail.com",
+  "phone": "0504687426",
+  "plate": "Abu Dhabi 12, 37525",
+  "model": "BMW X4",
+  "date": "28 June 2025",
+  "timeofcall": null,
+  "timeofappointment": "3 pm",
+  "servicesprovided": null
+}
+```
+2025-07-03 01:55:16,963 - utils - INFO - Transcribing audio: ./audio_files\WhatsApp Audio.mp4
+2025-07-03 01:55:17,229 - faster_whisper - INFO - Processing audio with duration 01:45.749
+2025-07-03 01:55:18,205 - faster_whisper - INFO - Detected language 'en' with probability 0.61
+2025-07-03 01:55:29,403 - utils - INFO - Transcription complete.
+2025-07-03 01:55:32,334 - utils - INFO - LLM Response: ```json
+{
+  "name": "Mrs. Piyush Nayak",
+  "email": "NayakPiyush10@gmail.com",
+  "phone": "0508370974",
+  "plate": "XYZ123",
+  "model": "BMW X4 2024",
+  "date": "July 5th",
+  "timeofcall": null,
+  "timeofappointment": "10:30am",
+  "servicesprovided": "oil change, brake inspection, AC gas refill"
+}
+```
+2025-07-03 02:01:46,539 - utils - INFO - Transcribing audio: ./audio_files\WhatsApp Audio.mp4
+2025-07-03 02:01:46,798 - faster_whisper - INFO - Processing audio with duration 01:45.749
+2025-07-03 02:01:47,731 - faster_whisper - INFO - Detected language 'en' with probability 0.61
+2025-07-03 02:01:58,847 - utils - INFO - Transcription complete.
+2025-07-03 02:02:01,282 - utils - INFO - LLM Response: ```json
+{
+  "name": "Mrs. Piyush Nayak",
+  "email": "NayakPiyush10@gmail.com",
+  "phone": "0508370974",
+  "plate": "XYZ123",
+  "model": "BMW X4 2024",
+  "date": "July 5th",
+  "time_of_call": null,
+  "time_of_appointment": "10:30am",
+  "services_provided": ["oil change", "brake inspection", "AC gas refill"]
+}
+```
+2025-07-03 02:09:32,641 - utils - INFO - Transcribing audio: ./audio_files\WhatsApp Audio.mp4
+2025-07-03 02:09:32,889 - faster_whisper - INFO - Processing audio with duration 01:45.749
+2025-07-03 02:09:33,832 - faster_whisper - INFO - Detected language 'en' with probability 0.61
+2025-07-03 02:09:44,863 - utils - INFO - Transcription complete.
+2025-07-03 02:09:48,357 - utils - INFO - LLM Response: ```json
+{
+  "name": "Mrs. Piyush Nayak",
+  "email": "NayakPiyush10@gmail.com",
+  "phone": "0508370974",
+  "plate": "XYZ123",
+  "model": "BMW X4 2024",
+  "date": "July 5th",
+  "time_of_call": null,
+  "time_of_appointment": "10:30am",
+  "services_provided": ["oil change", "brake inspection", "AC gas refill"]
+}
+```
+2025-07-03 02:09:48,639 - utils - INFO - Appointment saved to Excel.
+2025-07-03 02:09:50,913 - utils - INFO - Confirmation email sent to NayakPiyush10@gmail.com
+2025-07-07 01:46:10,390 - utils - INFO - Transcribing audio: ./audio_files\final_conversation.wav
+2025-07-07 01:46:10,559 - faster_whisper - INFO - Processing audio with duration 01:11.078
+2025-07-07 01:46:11,481 - faster_whisper - INFO - Detected language 'en' with probability 0.99
+2025-07-07 01:46:18,409 - utils - INFO - Transcription complete.
+2025-07-07 01:46:19,850 - utils - INFO - LLM Response: ```json
+{
+  "name": null,
+  "email": "c970rgmail.com",
+  "phone": "0505512801",
+  "plate": "xyz123yrs2034",
+  "model": "BRWx4",
+  "date": "July 6th",
+  "time_of_call": null,
+  "time_of_appointment": "10 a.m.",
+  "services_provided": "Oil change and brake inspection"
+}
+```
+2025-07-07 01:46:20,212 - utils - INFO - Appointment saved to Excel.
+2025-07-07 01:46:22,019 - utils - ERROR - Failed to send email: {'c970rgmail.com': (553, b'5.1.3 The recipient address <c970rgmail.com> is not a valid RFC 5321\n5.1.3 address. For more information, go to\n5.1.3  https://support.google.com/a/answer/3221692 and review RFC 5321\n5.1.3 specifications. 5b1f17b1804b1-454a997de2asm132921395e9.12 - gsmtp')}
+2025-07-07 02:03:28,453 - utils - INFO - Transcribing audio: ./audio_files\final_conversation.wav
+2025-07-07 02:03:28,628 - faster_whisper - INFO - Processing audio with duration 01:14.766
+2025-07-07 02:03:29,556 - faster_whisper - INFO - Detected language 'en' with probability 0.99
+2025-07-07 02:03:36,871 - utils - INFO - Transcription complete.
+2025-07-07 02:03:38,550 - utils - INFO - LLM Response: ```json
+{
+  "name": null,
+  "email": "read",
+  "phone": "05868401",
+  "plate": "58.74.3",
+  "model": "BMW i4",
+  "date": "July 6th",
+  "time_of_call": null,
+  "time_of_appointment": "VM",
+  "services_provided": "Oil change, brake inspection, AC repair"
+}
+```
+2025-07-07 02:03:38,825 - utils - INFO - Appointment saved to Excel.
+2025-07-07 02:03:40,492 - utils - ERROR - Failed to send email: {'read': (553, b'5.1.3 The recipient address <read> is not a valid RFC 5321 address. For more\n5.1.3 information, go to\n5.1.3  https://support.google.com/a/answer/3221692 and review RFC 5321\n5.1.3 specifications. 5b1f17b1804b1-454a9beb22asm135327325e9.36 - gsmtp')}
+2025-07-07 02:13:59,068 - utils - INFO - Transcribing audio: ./audio_files\final_conversation.wav
+2025-07-07 02:13:59,222 - faster_whisper - INFO - Processing audio with duration 01:13.158
+2025-07-07 02:14:00,176 - faster_whisper - INFO - Detected language 'en' with probability 0.98
+2025-07-07 02:14:06,674 - utils - INFO - Transcription complete.
+2025-07-07 02:14:08,344 - utils - INFO - LLM Response: ```json
+{
+  "name": null,
+  "email": "dniak70rgmail.com",
+  "phone": "0505512801",
+  "plate": "xyz123",
+  "model": "2024bnwx1",
+  "date": "July 7th",
+  "time_of_call": null,
+  "time_of_appointment": "4PM",
+  "services_provided": "phone service"
+}
+```
+2025-07-07 02:14:08,647 - utils - INFO - Appointment saved to Excel.
+2025-07-07 02:14:10,326 - utils - ERROR - Failed to send email: {'dniak70rgmail.com': (553, b'5.1.3 The recipient address <dniak70rgmail.com> is not a valid RFC 5321\n5.1.3 address. For more information, go to\n5.1.3  https://support.google.com/a/answer/3221692 and review RFC 5321\n5.1.3 specifications. ffacd0b85a97d-3b471b966c0sm9743675f8f.52 - gsmtp')}
+2025-07-07 02:27:38,223 - utils - INFO - Transcribing audio: ./audio_files\final_conversation.wav
+2025-07-07 02:27:38,375 - faster_whisper - INFO - Processing audio with duration 01:12.350
+2025-07-07 02:27:39,298 - faster_whisper - INFO - Detected language 'en' with probability 0.98
+2025-07-07 02:27:45,949 - utils - INFO - Transcription complete.
+2025-07-07 02:27:47,771 - utils - INFO - LLM Response: ```json
+{
+  "name": "Raqan",
+  "email": "readraqanany2aggmail.com",
+  "phone": "058768401",
+  "plate": "077777",
+  "model": null,
+  "date": "July 5th",
+  "time_of_call": null,
+  "time_of_appointment": "12 p.m.",
+  "services_provided": "service inspection"
+}
+```
+2025-07-07 02:27:48,067 - utils - INFO - Appointment saved to Excel.
+2025-07-07 02:27:49,849 - utils - ERROR - Failed to send email: {'readraqanany2aggmail.com': (553, b'5.1.3 The recipient address <readraqanany2aggmail.com> is not a valid RFC\n5.1.3 5321 address. For more information, go to\n5.1.3  https://support.google.com/a/answer/3221692 and review RFC 5321\n5.1.3 specifications. ffacd0b85a97d-3b472767a20sm9454472f8f.86 - gsmtp')}
+2025-07-09 04:03:17,610 - utils - INFO - Transcribing audio: ./audio_files\full_conversation.mp3
+2025-07-09 04:03:18,068 - faster_whisper - INFO - Processing audio with duration 03:25.473
+2025-07-09 04:03:19,316 - faster_whisper - INFO - Detected language 'en' with probability 0.94
+2025-07-09 04:03:46,065 - utils - INFO - Transcription complete.
+2025-07-09 04:03:49,499 - utils - INFO - LLM Response: ```json
+{
+  "name": "Cherognaik",
+  "email": "cn-a-k-7-0-art-g-m-l.com",
+  "phone": "058551-2801",
+  "plate": "37525",
+  "model": "BMW X4",
+  "date": null,
+  "time_of_call": null,
+  "time_of_appointment": "2023-07-13T10:00:00",
+  "services_provided": "full card inspection"
+}
+```
+2025-07-09 04:03:49,993 - utils - INFO - Appointment saved to Excel.
+2025-07-09 04:03:51,835 - utils - ERROR - Failed to send email: {'cn-a-k-7-0-art-g-m-l.com': (553, b'5.1.3 The recipient address <cn-a-k-7-0-art-g-m-l.com> is not a valid RFC\n5.1.3 5321 address. For more information, go to\n5.1.3  https://support.google.com/a/answer/3221692 and review RFC 5321\n5.1.3 specifications. 5b1f17b1804b1-454d50329a7sm19505295e9.3 - gsmtp')}
+2025-07-10 06:35:43,519 - utils - INFO - Transcribing audio: ./audio_files\Polestar Audio.mp3
+2025-07-10 06:35:43,521 - utils - ERROR - Error during transcription: [Errno 13] Permission denied: './audio_files\\Polestar Audio.mp3'
+2025-07-10 06:36:09,573 - utils - INFO - Transcribing audio: ./audio_files\Polestar Audio.mp3
+2025-07-10 06:36:10,107 - faster_whisper - INFO - Processing audio with duration 03:53.280
+2025-07-10 06:36:11,373 - faster_whisper - INFO - Detected language 'en' with probability 0.89
+2025-07-10 06:36:57,409 - utils - INFO - Transcription complete.
+2025-07-10 06:37:00,434 - utils - INFO - LLM Response: ```json
+{
+  "name": "Mona",
+  "email": null,
+  "phone": "0556935549",
+  "plate": null,
+  "model": "Polsta 2",
+  "date": null,
+  "time_of_call": null,
+  "time_of_appointment": null,
+  "services_provided": "test drive"
+}
+```
+2025-07-10 06:37:00,838 - utils - INFO - Appointment saved to Excel.
+2025-07-10 06:37:03,384 - utils - INFO - Confirmation email sent to cnayak70@gmail.com
+2025-07-10 06:55:08,317 - utils - INFO - Transcribing audio: ./audio_files\RAM CUF9SV650D73R96NU34H5DV7GC0067GQ_2024-05-17_08-45-31_0.mp3
+2025-07-10 06:55:08,741 - faster_whisper - INFO - Processing audio with duration 02:45.240
+2025-07-10 06:55:09,866 - faster_whisper - INFO - Detected language 'en' with probability 0.67
+2025-07-10 06:55:45,758 - utils - INFO - Transcription complete.
+2025-07-10 06:55:48,283 - utils - INFO - LLM Response: ```json
+{
+  "name": null,
+  "email": null,
+  "phone": null,
+  "plate": null,
+  "model": "Ram Limited",
+  "date": null,
+  "time_of_call": null,
+  "time_of_appointment": null,
+  "services_provided": null
+}
+```
+2025-07-10 06:55:48,331 - utils - INFO - Appointment saved to Excel.
+2025-07-10 06:55:50,604 - utils - INFO - Confirmation email sent to cnayak70@gmail.com
+2025-07-15 00:32:53,454 - utils - INFO - Preprocessing and transcribing audio: ./audio_files\Polestar Audio.mp3
+2025-07-15 00:33:15,404 - faster_whisper - INFO - Processing audio with duration 03:53.280
+2025-07-15 00:33:16,690 - faster_whisper - INFO - Detected language 'en' with probability 0.67
+2025-07-15 00:34:14,606 - utils - INFO - Transcription complete.
+2025-07-15 00:34:16,321 - utils - INFO - LLM Response: ```json
+{
+  "name": "Mona",
+  "email": null,
+  "phone": "0556-35549",
+  "plate": null,
+  "model": null,
+  "date": null,
+  "time_of_call": null,
+  "time_of_appointment": null,
+  "services_provided": null
+}
+```
+2025-07-15 00:34:16,801 - utils - INFO - Appointment saved to Excel.
+2025-07-15 00:34:19,804 - utils - INFO - Confirmation email sent to cnayak70@gmail.com
+2025-07-15 00:34:45,445 - utils - INFO - Preprocessing and transcribing audio: ./audio_files\RAM CUF9SV650D73R96NU34H5DV7GC0067GQ_2024-05-17_08-45-31_0.mp3
+2025-07-15 00:34:48,996 - faster_whisper - INFO - Processing audio with duration 02:45.240
+2025-07-15 00:34:50,163 - faster_whisper - INFO - Detected language 'en' with probability 0.40
+2025-07-15 00:35:19,378 - utils - INFO - Transcription complete.
+2025-07-15 00:35:21,335 - utils - INFO - LLM Response: ```json
+{
+  "name": "Sam",
+  "email": null,
+  "phone": null,
+  "plate": null,
+  "model": "Dodge Ram Limited",
+  "date": null,
+  "time_of_call": null,
+  "time_of_appointment": null,
+  "services_provided": null
+}
+```
+2025-07-15 00:35:21,407 - utils - INFO - Appointment saved to Excel.
+2025-07-15 00:35:23,899 - utils - INFO - Confirmation email sent to cnayak70@gmail.com
+2025-07-15 00:36:02,801 - utils - INFO - Preprocessing and transcribing audio: ./audio_files\Arabic 5M51G29E3P1VB3UNGBQA1L2K880013PG_1.mp3
+2025-07-15 00:36:02,802 - utils - ERROR - Error during audio preprocessing: [Errno 13] Permission denied: './audio_files\\Arabic 5M51G29E3P1VB3UNGBQA1L2K880013PG_1.mp3'
+2025-07-15 00:36:02,803 - utils - ERROR - Error during transcription: [Errno 13] Permission denied: './audio_files\\Arabic 5M51G29E3P1VB3UNGBQA1L2K880013PG_1.mp3'
+2025-07-15 00:36:16,567 - utils - INFO - Preprocessing and transcribing audio: ./audio_files\Arabic 5M51G29E3P1VB3UNGBQA1L2K880013PG_1.mp3
+2025-07-15 00:36:40,012 - utils - INFO - Preprocessing and transcribing audio: ./audio_files\Arabic 5M51G29E3P1VB3UNGBQA1L2K880013PG_1.mp3
+2025-07-15 00:36:49,255 - faster_whisper - INFO - Processing audio with duration 08:10.032
+2025-07-15 00:36:50,863 - faster_whisper - INFO - Detected language 'ar' with probability 0.44
+2025-07-15 00:41:03,259 - utils - INFO - Transcription complete.
+2025-07-15 00:41:04,672 - utils - INFO - LLM Response: ```json
+{
+  "name": null,
+  "email": null,
+  "phone": null,
+  "plate": null,
+  "model": null,
+  "date": null,
+  "time_of_call": null,
+  "time_of_appointment": null,
+  "services_provided": null
+}
+```
+2025-07-15 00:41:04,998 - utils - INFO - Appointment saved to Excel.
+2025-07-15 00:41:07,711 - utils - INFO - Confirmation email sent to cnayak70@gmail.com
+2025-07-15 04:34:51,027 - utils - INFO - Preprocessing and transcribing audio: C:/Users/Administrator/Desktop/Chirag/car_dealer/processed_files/Polestar Audio.mp3
+2025-07-15 04:35:01,466 - faster_whisper - INFO - Processing audio with duration 03:53.280
+2025-07-15 04:35:02,767 - faster_whisper - INFO - Detected language 'en' with probability 0.67
+2025-07-15 04:35:41,968 - utils - INFO - Transcription complete.
+2025-07-15 04:35:47,069 - utils - INFO - LLM Response: ```json
+{
+  "name": "Mona",
+  "email": null,
+  "phone": "0556735549",
+  "plate": null,
+  "model": "Paul's Electric Car",
+  "date": null,
+  "time_of_call": null,
+  "time_of_appointment": null,
+  "services_provided": null
+}
+```
+2025-07-15 04:35:47,495 - utils - INFO - Appointment saved to Excel.
+2025-07-15 04:35:49,951 - utils - INFO - Confirmation email sent to cnayak70@gmail.com

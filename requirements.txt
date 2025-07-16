@@ -1,0 +1,8 @@
+pandas>=2.0.0
+openpyxl>=3.1.0
+python-dotenv>=1.0.0
+whisper-cpp-py>=0.1.0
+python-dateutil>=2.8.0
+tqdm>=4.0.0
+python-pptx>=0.6.0
+pywin32>=300; sys_platform == 'win32'
