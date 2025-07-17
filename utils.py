@@ -58,7 +58,8 @@ class ConfigManager:
 class AudioProcessor:
     """Handles audio transcription using faster-whisper, with preprocessing"""
     def __init__(self, model_path: str):
-        self.model = WhisperModel(model_path, compute_type="auto")
+        # Use GPU and float32 to avoid warning
+        self.model = WhisperModel(model_path, device="cuda", compute_type="float32")
 
     def preprocess_audio(self, audio_path: str) -> str:
         """Clean and normalize audio, return path to processed WAV"""
@@ -87,12 +88,13 @@ class AudioProcessor:
             raise
 
     def transcribe_audio(self, audio_path: str) -> str:
-        """Preprocess + transcribe"""
+        """Preprocess + transcribe with dynamic language switching (no language lock)"""
         try:
             logger.info(f"Preprocessing and transcribing audio: {audio_path}")
             cleaned_audio = self.preprocess_audio(audio_path)
 
-            segments, _ = self.model.transcribe(cleaned_audio, beam_size=5)
+            # Do NOT set a fixed language; let Whisper auto-detect and switch between English/Arabic
+            segments, _ = self.model.transcribe(cleaned_audio, beam_size=5, language=None)
             transcript = " ".join([segment.text for segment in segments])
             logger.info("Transcription complete.")
             return transcript
@@ -104,6 +106,7 @@ class AudioProcessor:
 class DataExtractor:
     """Extracts appointment info using OpenAI LLM"""
     def __init__(self, config):
+        # Set the API key for the openai module
         openai.api_key = config.get_openai_config('api_key')
 
     def extract_info(self, transcript: str) -> Dict[str, str]:
@@ -121,7 +124,7 @@ Transcript: \"\"\"{transcript}\"\"\"
                 messages=[{"role": "user", "content": prompt}],
                 temperature=0,
             )
-            content = response['choices'][0]['message']['content']
+            content = response.choices[0].message['content'] if isinstance(response.choices[0].message, dict) else response.choices[0].message.content
             logger.info(f"LLM Response: {content}")
 
             # Remove markdown code block if present
@@ -219,3 +222,5 @@ class EmailSender:
         except Exception as e:
             logger.error(f"Failed to send email: {e}")
             raise
+
+model = WhisperModel("large-v2", device="cuda", compute_type="float32")

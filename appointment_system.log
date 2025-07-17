@@ -534,3 +534,106 @@ A detailed migration guide is available here: https://github.com/openai/openai-p
 ```
 2025-07-15 04:35:47,495 - utils - INFO - Appointment saved to Excel.
 2025-07-15 04:35:49,951 - utils - INFO - Confirmation email sent to cnayak70@gmail.com
+2025-07-16 06:18:24,893 - huggingface_hub.file_download - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-07-16 06:20:36,584 - huggingface_hub.file_download - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-07-16 06:31:52,644 - utils - INFO - Preprocessing and transcribing audio: C:/Users/Administrator/Desktop/Chirag/car_dealer/processed_files/Arabic 5M51G29E3P1VB3UNGBQA1L2K880013PG_1.mp3
+2025-07-16 06:32:08,496 - faster_whisper - INFO - Processing audio with duration 08:10.032
+2025-07-16 06:32:23,029 - faster_whisper - INFO - Detected language 'ar' with probability 0.97
+2025-07-16 07:01:41,796 - utils - INFO - Preprocessing and transcribing audio: C:/Users/Administrator/Desktop/Chirag/car_dealer/processed_files/Polestar Audio.mp3
+2025-07-16 07:01:46,390 - faster_whisper - INFO - Processing audio with duration 03:53.280
+2025-07-16 07:01:46,962 - utils - ERROR - Error during transcription: Library cublas64_12.dll is not found or cannot be loaded
+2025-07-16 07:47:36,554 - utils - INFO - Preprocessing and transcribing audio: C:/Users/Administrator/Desktop/Chirag/car_dealer/processed_files/Polestar Audio.mp3
+2025-07-16 07:47:41,352 - faster_whisper - INFO - Processing audio with duration 03:53.280
+2025-07-16 07:47:42,985 - faster_whisper - INFO - Detected language 'en' with probability 0.99
+2025-07-16 07:48:32,817 - utils - INFO - Transcription complete.
+2025-07-16 07:48:35,603 - utils - INFO - LLM Response: ```json
+{
+  "name": "Mona",
+  "email": null,
+  "phone": "0555935549",
+  "plate": null,
+  "model": "Polestar 2",
+  "date": "Saturday",
+  "time_of_call": null,
+  "time_of_appointment": null,
+  "services_provided": "test drive"
+}
+```
+2025-07-16 07:48:36,071 - utils - INFO - Appointment saved to Excel.
+2025-07-16 07:48:38,905 - utils - INFO - Confirmation email sent to cnayak70@gmail.com
+2025-07-16 07:49:19,532 - utils - INFO - Preprocessing and transcribing audio: C:/Users/Administrator/Desktop/Chirag/car_dealer/processed_files/Arabic 5M51G29E3P1VB3UNGBQA1L2K880013PG_1.mp3
+2025-07-16 07:49:28,645 - faster_whisper - INFO - Processing audio with duration 08:10.032
+2025-07-16 07:49:30,254 - faster_whisper - INFO - Detected language 'ar' with probability 0.98
+2025-07-16 07:53:22,645 - utils - INFO - Transcription complete.
+2025-07-16 07:53:25,170 - utils - INFO - LLM Response: ```json
+{
+  "name": "عبدالله محمد عبدالرحيم",
+  "email": null,
+  "phone": "65444356694",
+  "plate": "76905",
+  "model": "تايوتا هايليندر مودل عام ٢٠٢٣",
+  "date": "2025-05-01",
+  "time_of_call": null,
+  "time_of_appointment": "12:00",
+  "services_provided": null
+}
+```
+2025-07-16 07:53:25,246 - utils - INFO - Appointment saved to Excel.
+2025-07-16 07:53:27,415 - utils - INFO - Confirmation email sent to cnayak70@gmail.com
+2025-07-16 23:55:00,821 - utils - INFO - Preprocessing and transcribing audio: C:/Users/Administrator/Desktop/Chirag/car_dealer/processed_files/Arabic 5M51G29E3P1VB3UNGBQA1L2K880013PG_1.mp3
+2025-07-16 23:55:16,685 - faster_whisper - INFO - Processing audio with duration 08:10.032
+2025-07-16 23:55:18,723 - faster_whisper - INFO - Detected language 'ar' with probability 0.98
+2025-07-16 23:59:57,337 - utils - INFO - Transcription complete.
+2025-07-16 23:59:59,273 - utils - INFO - LLM Response: ```json
+{
+  "name": "عبدالله محمد عبدالرهيب",
+  "email": null,
+  "phone": "0500556694",
+  "plate": "76905",
+  "model": "تيوتا هايلندر 2023",
+  "date": "1-5-2025",
+  "time_of_call": null,
+  "time_of_appointment": null,
+  "services_provided": null
+}
+```
+2025-07-16 23:59:59,709 - utils - INFO - Appointment saved to Excel.
+2025-07-17 00:00:02,156 - utils - INFO - Confirmation email sent to cnayak70@gmail.com
+2025-07-17 00:01:57,764 - utils - INFO - Preprocessing and transcribing audio: C:/Users/Administrator/Desktop/Chirag/car_dealer/processed_files/Polestar Audio.mp3
+2025-07-17 00:02:02,480 - faster_whisper - INFO - Processing audio with duration 03:53.280
+2025-07-17 00:02:03,700 - faster_whisper - INFO - Detected language 'en' with probability 0.99
+2025-07-17 00:02:53,853 - utils - INFO - Transcription complete.
+2025-07-17 00:02:56,141 - utils - INFO - LLM Response: ```json
+{
+  "name": "Mona",
+  "email": null,
+  "phone": "0555935549",
+  "plate": null,
+  "model": "Polestar 2",
+  "date": "Saturday",
+  "time_of_call": null,
+  "time_of_appointment": null,
+  "services_provided": "test drive"
+}
+```
+2025-07-17 00:02:56,229 - utils - INFO - Appointment saved to Excel.
+2025-07-17 00:02:58,490 - utils - INFO - Confirmation email sent to cnayak70@gmail.com
+2025-07-17 00:16:44,994 - utils - INFO - Preprocessing and transcribing audio: C:/Users/Administrator/Desktop/Chirag/car_dealer/processed_files/RAM CUF9SV650D73R96NU34H5DV7GC0067GQ_2024-05-17_08-45-31_0.mp3
+2025-07-17 00:16:48,434 - faster_whisper - INFO - Processing audio with duration 02:45.240
+2025-07-17 00:16:50,010 - faster_whisper - INFO - Detected language 'en' with probability 0.98
+2025-07-17 00:18:11,381 - utils - INFO - Transcription complete.
+2025-07-17 00:18:14,078 - utils - INFO - LLM Response: ```json
+{
+  "name": "Mohammed Al-Naim",
+  "email": null,
+  "phone": null,
+  "plate": null,
+  "model": "Dodge RAM 1500 Limited",
+  "date": null,
+  "time_of_call": null,
+  "time_of_appointment": null,
+  "services_provided": null
+}
+```
+2025-07-17 00:18:14,408 - utils - INFO - Appointment saved to Excel.
+2025-07-17 00:18:16,650 - utils - INFO - Confirmation email sent to cnayak70@gmail.com

@@ -10,7 +10,7 @@ from PyQt6.QtCore import Qt
 from utils import ConfigManager, AudioProcessor, DataExtractor, ExcelManager, EmailSender
 
 # Load config and components
-CONFIG_PATH = "c:/Users/Administrator/Desktop/Chirag/car_dealer/config.ini"
+CONFIG_PATH = "C:\\Users\\Administrator\\Desktop\\Chirag\\car_dealer\\config.ini"
 config = ConfigManager(CONFIG_PATH)
 audio_processor = AudioProcessor(config.get_whisper_config("model_path"))
 data_extractor = DataExtractor(config)
@@ -43,24 +43,100 @@ class MainWindow(QMainWindow):
         super().__init__()
 
         self.setWindowTitle("🎧 Appointment Extractor")
-        self.setMinimumSize(800, 600)
+        self.setMinimumSize(900, 650)
+        self.setStyleSheet("""
+            QMainWindow {
+                background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                    stop:0 #232526, stop:1 #414345);
+            }
+        """)
+
+        # Glassmorphism container
+        container = QWidget()
+        container.setStyleSheet("""
+            QWidget {
+                background: rgba(40, 44, 52, 0.55);
+                border-radius: 24px;
+                border: 1px solid rgba(255,255,255,0.18);
+            }
+        """)
 
         layout = QVBoxLayout()
+        layout.setContentsMargins(40, 40, 40, 40)
+        layout.setSpacing(24)
+
         self.drag_drop_label = DragDropLabel(self)
         self.drag_drop_label.setAcceptDrops(True)
+        self.drag_drop_label.setStyleSheet("""
+            QLabel {
+                background: rgba(255,255,255,0.08);
+                border: 2px dashed #6c63ff;
+                border-radius: 18px;
+                font-size: 20px;
+                font-family: 'Segoe UI', 'Arial', sans-serif;
+                color: #e0e0e0;
+                padding: 48px;
+                margin-bottom: 12px;
+            }
+        """)
 
         self.browse_button = QPushButton("📁 Browse Audio File")
+        self.browse_button.setCursor(Qt.CursorShape.PointingHandCursor)
+        self.browse_button.setStyleSheet("""
+            QPushButton {
+                background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                    stop:0 #6c63ff, stop:1 #232526);
+                color: #fff;
+                border: none;
+                border-radius: 14px;
+                font-size: 18px;
+                font-family: 'Segoe UI', 'Arial', sans-serif;
+                padding: 16px 32px;
+                margin-bottom: 12px;
+            }
+            QPushButton:hover {
+                background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                    stop:0 #232526, stop:1 #6c63ff);
+            }
+        """)
         self.browse_button.clicked.connect(self.browse_file)
 
         self.output_box = QTextEdit()
         self.output_box.setReadOnly(True)
-        self.output_box.setStyleSheet("font-family: Courier;")
+        self.output_box.setStyleSheet("""
+            QTextEdit {
+                background: rgba(255,255,255,0.10);
+                border-radius: 14px;
+                font-family: 'Fira Mono', 'Consolas', 'Courier New', monospace;
+                font-size: 16px;
+                color: #e0e0e0;
+                padding: 18px;
+                border: 1px solid rgba(255,255,255,0.12);
+            }
+        """)
 
+        # Title bar with glass effect
+        title_label = QLabel("🎧 Appointment Extractor")
+        title_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        title_label.setStyleSheet("""
+            QLabel {
+                background: rgba(255,255,255,0.10);
+                border-radius: 14px;
+                font-size: 32px;
+                font-family: 'Segoe UI', 'Arial', sans-serif;
+                color: #fff;
+                font-weight: bold;
+                margin-bottom: 18px;
+                padding: 18px;
+                letter-spacing: 2px;
+            }
+        """)
+
+        layout.addWidget(title_label)
         layout.addWidget(self.drag_drop_label)
         layout.addWidget(self.browse_button)
         layout.addWidget(self.output_box)
 
-        container = QWidget()
         container.setLayout(layout)
         self.setCentralWidget(container)
 
